@@ -15,14 +15,13 @@ jobs:
 
 
     steps: 
-      
-      -name: 'Before1'
+      - name: 'before'
         run: ls
 
-      -uses: actions/checkout@v3 
-
-      -name: 'After'
-        run: ls  
+      - uses: actions/checkout@v3  
+      
+      - name: 'after'
+        run: ls
 
 
 
